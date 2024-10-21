@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Intro component with sign up form</title>
+  </head>
+  <body
+    class="bg-[url('/images/bg-intro-mobile.png')] bg-contain bg-Red text-white font-poppins min-h-[100dvh] flex justify-center items-center px-6 py-20"
+  >
+    <div class="lg:flex lg:justify-center lg:items-center lg:gap-x-20">
+      <div id="left" class="pb-14">
+        <div class="" id="text-wrapper">
+          <h1
+            class="text-3xl font-bold text-center pb-6 md:text-4xl md:text-start lg:text-5xl lg:max-w-[500px]"
+          >
+            Learn to code by watching others
+          </h1>
+          <p class="text-center max-w-[600px] lg:text-start">
+            See how experienced developers solve problems in real-time. Watching
+            scripted tutorials is great, but understanding how developers think
+            is invaluable.
+          </p>
+        </div>
+      </div>
+      <div id="right" class="">
+        <div class="flex flex-col gap-y-7">
+          <div
+            class="bg-Blue rounded-xl shadow-[0_8px_1px_0_rgba(0,0,0,0.2)] shadow-[0_8px_0px_0_rgba(0,0,0,0.16)] w-full max-w-[500px] mx-auto"
+          >
+            <h1
+              class="text-center text-[1.1rem] max-w-[200px] mx-auto py-4 font-[300]"
+            >
+              <span class="font-semibold">Try it free 7 days</span>
+              then $20/mo. thereafter
+            </h1>
+          </div>
+          <div class="bg-white rounded-xl py-6 px-6 max-w-[500px] mx-auto">
+            <form
+              class="flex flex-col justify-center items-center gap-y-4 pb-3"
+              id="form"
+              autocomplete="off"
+            >
+              <div class="w-full">
+                <div class="w-full flex items-center">
+                  <input
+                    class="w-full border border-[hsl(249_10%_26%/.3)] py-4 rounded-md placeholder:text-[hsl(249_10%_26%/.7)] placeholder:font-semibold px-5 text-[hsl(249_10%_26%/1)] focus:outline-Blue font-medium"
+                    type="First Name"
+                    placeholder="First Name"
+                    id="firstnField"
+                    autocomplete="off"
+                  />
+                  <img
+                    class="ml-[-35px] sm:ml-[-50px] hidden"
+                    id="img"
+                    src="images/icon-error.svg"
+                    alt=""
+                  />
+                </div>
+                <p class="text-Red text-end mt-1 italic hidden" id="p">
+                  First Name cannot be empty
+                </p>
+              </div>
+
+              <div class="w-full">
+                <div class="w-full flex items-center">
+                  <input
+                    class="w-full border border-[hsl(249_10%_26%/.3)] py-4 rounded-md placeholder:text-[hsl(249_10%_26%/.7)] placeholder:font-semibold px-5 text-[hsl(249_10%_26%/1)] focus:outline-Blue font-medium"
+                    type="Last Name"
+                    placeholder="Last Name"
+                    id="lastnField"
+                    autocomplete="off"
+                  />
+                  <img
+                    class="ml-[-35px] sm:ml-[-50px] hidden"
+                    id="img"
+                    src="images/icon-error.svg"
+                    alt=""
+                  />
+                </div>
+                <p class="text-Red text-end mt-1 italic hidden" id="p">
+                  Last Name cannot be empty
+                </p>
+              </div>
+              <div class="w-full">
+                <div class="w-full flex items-center">
+                  <input
+                    class="w-full border border-[hsl(249_10%_26%/.3)] py-4 rounded-md placeholder:text-[hsl(249_10%_26%/.7)] placeholder:font-semibold px-5 text-[hsl(249_10%_26%/1)] focus:outline-Blue font-medium"
+                    type="Email Address"
+                    placeholder="Email Address"
+                    id="emailField"
+                    autocomplete="off"
+                  />
+                  <img
+                    class="ml-[-35px] sm:ml-[-50px] hidden"
+                    id="img"
+                    src="images/icon-error.svg"
+                    alt=""
+                  />
+                </div>
+                <p class="text-Red text-end mt-1 italic hidden" id="p">
+                  Email Address cannot be empty
+                </p>
+              </div>
+              <div class="w-full">
+                <div class="w-full flex items-center">
+                  <input
+                    class="w-full border border-[hsl(249_10%_26%/.3)] py-4 rounded-md placeholder:text-[hsl(249_10%_26%/.7)] placeholder:font-semibold px-5 text-[hsl(249_10%_26%/1)] focus:outline-Blue font-medium"
+                    type="password"
+                    placeholder="Password"
+                    id="passField"
+                    autocomplete="off"
+                  />
+                  <img
+                    class="ml-[-35px] sm:ml-[-50px] hidden"
+                    id="img"
+                    src="images/icon-error.svg"
+                    alt=""
+                  />
+                </div>
+                <p class="text-Red text-end mt-1 italic hidden" id="p">
+                  Password cannot be empty
+                </p>
+              </div>
+              <button
+                class="bg-Green w-full uppercase py-4 rounded-md border-b-4 outline-none border-b-[hsl(154_59%_45%)] hover:bg-[hsl(154_59%_45%/.6)] hover:border-b-[hsl(154_59%_45%/.5)]"
+                id="submitBtn"
+              >
+                Claim your free trial
+              </button>
+            </form>
+            <p class="text-center text-GrayishBlue">
+              By clicking the button, you are agreeing to our
+              <span class="text-Red font-semibold">Terms and Services</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
